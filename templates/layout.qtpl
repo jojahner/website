@@ -1,0 +1,25 @@
+{%
+interface Page {
+    Title()
+    Body()
+}
+%}
+
+{% func PageTemplate(p Page) %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="jojahner">
+    <meta name="description" content="personal homepage">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+
+    <title>{%= p.Title() %}</title>
+  </head>
+  <body>
+    {%= p.Body() %}
+  </body>
+</html>
+{% endfunc %}

@@ -1,0 +1,13 @@
+{% code
+type Index struct {}
+%}
+
+{% func (p * Index) Title() %}
+  jojahner.de (tpl)
+{% endfunc %}
+
+{% func (p * Index) Body() %}
+  <div>
+    <h1>jojahner.de</h1>
+  </div>
+{% endfunc %}
