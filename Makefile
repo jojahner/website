@@ -1,11 +1,15 @@
 BINARY=.build/web_server
 
-.DEFAULT_GOAL: build
+.DEFAULT_GOAL: build-dev
 
-build:
+get-deps:
+	go get -u github.com/labstack/echo
+	go get -u github.com/valyala/quicktemplate
+
+build-dev:
 	go build -o ${BINARY}
 
-clean:
+clean-dev:
 	if [ -f ${BINARY} ] ; then rm ${BINARY} ; fi
 
-.PHONY: clean build
+.PHONY: get-deps clean-dev build-dev
