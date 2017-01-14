@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"bitbucket.org/jojahner/page/templates"
+	"github.com/jojahner/website/templates"
 	"github.com/labstack/echo"
 )
 

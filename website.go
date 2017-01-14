@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 
-	"bitbucket.org/jojahner/page/controller"
+	"github.com/jojahner/website/controller"
 
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
